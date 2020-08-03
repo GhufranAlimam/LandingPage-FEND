@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #FEE05B;
+    list-style: none;
+}
+
+.page-header{
+    width: 100%;
+    height: 8.6em;
+    background-color:#55B147;
+    position: fixed;
+    
+}
+
+.navbar-menu{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "logo links";
+    height: 100%;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    grid-area: logo;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+}
+.one{
+    background-image: url(../images/hero-one.png);
+   
+}
+
+.two{
+    background-image: url(../images/hero-two.png);
+}
+
+.three{
+    background-image: url(../images/hero-three.png);
+}
+
+.four{
+    background-image: url(../images/hero-four.png);
+}
+
+
+.links{
+    font-size: 2em;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+#navbar-list{
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.your-active-class {
+    background-color:#55B147;
+}
+
+.active{
+    color:#396DC6;
+}
+
+/*========MEDIA QUERIES===========*/
+
+@media only screen and (min-width: 700px) and (max-width: 1079px){
+    .links{
+        font-size: 1.3em;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 1.4rem;
+        grid-area: logo;
+    }
+
+    .navbar-menu{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "logo" "links";
+    }
+
+    #navbar-list{
+        grid-area: links;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .links{
+        font-size: 1rem;
+        padding-bottom: 1.5em;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 1.3rem;
+        grid-area: logo;
+    }
+
+    .navbar-menu{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "logo" "links";
+    }
+
+    #navbar-list{
+        grid-area: links;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .links{
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}
+
