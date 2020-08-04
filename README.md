@@ -1,5 +1,6 @@
 # LANDING PAGE PROJECT
 The Landing page project is the second project in the Front End Nanodegree.
+
 ![Landing page](fin_render.gif)
 
 ## GETTING STARTED
@@ -14,11 +15,11 @@ A code editor of your choice and a strong drive.
 3. It should scroll down smoothly to the location instead of jumping to it.
 
 ## LANGUAGES
-1. HTML.
-2. CSS.
-3. JavaScript.
+* HTML.
+* CSS.
+* JavaScript.
 
-## RESULTS
+## What I have Learned
 1. How to manipulate the DOM.
 2. How to use events listeners.
 3. the logic behind the scrolling effect.
